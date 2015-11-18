@@ -1,0 +1,81 @@
+ul.drop-list{
+			list-style-type : none;
+			margin : 0;
+			padding : 0;
+			position : relative;
+			display : block;
+			max-width : 100%;
+		} 
+		ul.drop-list li{
+			display : block;
+			position : relative;
+			padding: 0;
+			margin: 5px 0;
+			border: 1px solid #ccc;
+   			background: #fafafa;
+   			width: 100%;
+		} 
+		ul.drop-list li .drop-handle{
+		    display: block;
+    		height: 30px;
+    		width : 100%;
+    		padding: 5px 10px;
+    		color: #333;
+    		font-size:13px;
+    		text-decoration: none;
+    		font-weight: bold;
+    		background: -webkit-linear-gradient(top, #fafafa 0%, #eee 100%);
+    		background: -moz-linear-gradient(top, #fafafa 0%, #eee 100%);
+    		background: linear-gradient(top, #fafafa 0%, #eee 100%);
+    		-webkit-border-radius: 3px;
+    		border-radius: 3px;
+    		box-sizing: border-box;
+    		-moz-box-sizing: border-box;
+		}
+		ul.drop-dragWrapper { 
+			 position: absolute; 
+			 pointer-events: none; 
+			 z-index: 9999; 
+		}
+		ul.drop-list li:hover{
+			border-color:#999;
+		}
+		ul.drop-list li .handle:hover{
+			 /*color: #2ea8e5; background: #fff; */
+		}
+		ul.drop-list li.list-depth-1 {
+			margin-left: 0px;
+		}
+		ul.drop-list li.list-depth-2 {
+			margin-left: 30px;
+		}
+		ul.drop-list li.list-depth-3 {
+			margin-left: 60px;
+		}
+		ul.drop-list li.list-depth-4 {
+			margin-left: 90px;
+		}
+		ul.drop-list li.list-depth-5 {
+			margin-left: 120px;
+		}
+		ul.drop-list li.list-depth-6 {
+			margin-left: 150px;
+		}
+		ul.drop-list li.list-depth-7 {
+			margin-left: 180px;
+		}
+		ul.drop-list li.list-depth-8 {
+			margin-left: 210px;
+		}
+		ul.drop-list li.list-depth-9 {
+			margin-left: 240px;
+		}
+		ul.drop-list li.list-depth-10 {
+			margin-left: 270px;
+		}
+	
+		ul.drop-list li.drop-placeholder {
+			background-color:#fff;
+			min-height: 20px;
+			border-style : dashed;
+		}
