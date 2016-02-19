@@ -26,7 +26,8 @@
     });
 		
    // 生成的dom如下
-    <ul class="drop drop-list drop-list-normal">
+   
+   <ul class="drop drop-list drop-list-normal">
       <li class="list-depth-1" data-depth="1" data-term-id="1">
         <div class="drop-handle">c1</div>
       </li>
