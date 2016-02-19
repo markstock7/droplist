@@ -1,0 +1,25 @@
+{
+  "name": "droplist",
+  "main": "droplist.js",
+  "authors": [
+    "mark stock <markstock7@hotmail.com>"
+  ],
+  "description": "可拖动排序的目录和列表",
+  "moduleType": [],
+  "keywords": [
+    "拖动，排序，目录，列表"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/markstock7/droplist",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}

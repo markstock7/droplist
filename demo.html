@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="./droplist.css">
+        <style type="text/css">
+            #droplistTest {
+                width:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            可排序的目录树结构
+        </h1>
+        <p>
+            根据需要重新排列目录结构，然后点击show changed data 会导出改变后的数据，
+        </p>
+        <div id="droplistTest"> </div>
+        <button onClick="serlalize()">Show changed data</button>
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="./droplist.js"></script>
+        <script type="text/javascript">
+            // there must have a parent and term_id in data,
+            var data = [ { term_id: 2 ,term_name: "c2" ,parent: 0},
+                 { term_id: 6 ,term_name: "c6" ,parent: 2},
+                 { term_id: 5 ,term_name: "c5" ,parent: 2},
+                 { term_id: 8 ,term_name: "c8" ,parent: 5},
+                 { term_id: 1 ,term_name: "c1" ,parent: 0},
+                 { term_id: 4 ,term_name: "c4" ,parent: 1},
+                 { term_id: 7 ,term_name: "c7" ,parent: 4},
+                 { term_id: 3 ,term_name: "c3" ,parent: 1} ];
+
+            var droptest = $('#droplistTest').dropList({
+                data : data ,
+                // drop-handle 中可以添加更多的数据
+                itemFactory : function(item){
+                    return '<div class="drop-handle">'+item.term_name+'</div>'
+                }
+            });
+            function serlalize() {
+                console.log(droptest.plugin.serialize());
+            }
+        </script>
+    </body>
+<html>
