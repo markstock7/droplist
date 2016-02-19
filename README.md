@@ -55,10 +55,11 @@
     </ul>
 
 你可以使用droptest.plugin.serlalize() 获取改变的数据, 每项数据如下，只导出其顺序或父目录改变的项目。
- { 
-   __changed: false
-   __original_parent: 2
-   parent: 8
-   term_id: 6 
-   term_name: "c6"
-}
+    
+    { 
+       __changed: false
+       __original_parent: 2
+       parent: 8
+       term_id: 6 
+       term_name: "c6"
+    }
